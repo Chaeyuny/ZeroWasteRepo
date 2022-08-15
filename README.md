@@ -3,31 +3,16 @@
 
 
 ## ✅ 서비스 소개
-### ✔ 서비스명 
-###     지도 라이브러리 기반 제로웨이스트 실천 안내 서비스
-
+### ✏ 서비스명 
+###       : 지도 라이브러리 기반 제로웨이스트 실천 안내 서비스
 <br>
 
-### ✔서비스설명 
-
-### 나도 제로웨이스트에 동참하고 싶어!!👨‍👩‍👦‍👦 나도 지구를 위한 용기를 가지고 싶어!!😎 
-
-### 그 용기 저희 에코백과 함께 합시다.😍
-
-* 쉽게 제로웨이스트 실천이 가능한 매장을 <strong>찾자!</strong><br>
-* 집에있는 나만의 용기에 담아 맛있게 <strong>먹자!</strong><br>
-* 제로웨이스트 인증하고 나만의 나무를 <strong>키우자!</strong><br>
-* 쿠폰을 받아 제로웨이트 샵으로 가서 <strong>할인 받자!</strong><br>
-* 우리 가게도 제로웨이스트 <strong>동참하자!</strong> <br><br>
-
-### 🌎 지구를 지키자!!
-
-* 가게명검색, 음식별 카테고리 선택으로 간편하게 제로웨이스트 매장 찾기
-* 제로웨이스트 인증하면 자동으로 나무성장, 쿠폰으로 보상
-* 제로웨이스트 샵에서 할인쿠폰 사용
-* 새로운 제로웨이스트 매장 등록시 자동으로 지도에 추가
-
-### 🥇 여러분도 함께 해요!!
+### ✏ 서비스 설명
+ : 평소 제로웨이스트 운동에 참여하고 싶었지만 제로웨이스트를 시행하는 매장 위치와 정보가 부족해
+   불편함을 겪었던 사람들을 위한 서비스
+ 
+ : 제로웨이스트 의미, 매장 위치와 정보, 연계 쿠폰 제공 등 선순환되는 서비스 제공을 통해 
+   다회용기 활용을 유도하여 환경운동에 보다 쉽게 접근하도록 돕는다.
 
 <br>
 
@@ -37,17 +22,24 @@
 <br>
 
 ## ✅ 주요 기능
-* 지도 상 매장 위치, 정보를 음식 종류별 또는 검색 기능을 통해 매장의 정보 출력
+* 지도에서 주변 제로웨이스트 매장들의 위치를 표시
+* 위치 마커 클릭 시 제로웨이스트 매장 정보 안내 페이지로 이동
+* 음식 종류별 카테고리 선택 또는 매장명 검색 기능을 통해 제로웨이스트 시행 매장 확인 가능
 * 영수증 인증과 매장 리뷰를 등록시킬 수 있는 사용자 커뮤니티 게시판
 * 제로웨이스트 실천 횟수에 따라 사용자의 에코등급 시각화
 * 에코 등급에 따른 제로웨이스트 생필품 샵과의 연계 쿠폰 구현
-* 신규 매장등록 시 매장의 위치 확인 및 매장 위치 자동 매핑 기능
+* 지도에 표시될 신규 제로웨이스트 매장등록 시 매장 위치 경도, 위도 자동 매핑 기능
 * 웹과 앱화면 모두 구동 가능하도록 반응형 웹사이트로 구현
 
 <br>
 
-## ✅ 기술스택
-<table>
+
+ ## ✅ 담당 역할
+    : KAKAO Map API를 활용한 제로웨이스트 매장 안내 서비스 구현
+
+<details>
+<summary><h2>✔ 사용기술<h2></summary>
+ <br><table>
     <tr>
         <th>구분</th>
         <th>내용</th>
@@ -56,15 +48,12 @@
         <td>사용언어</td>
         <td>
             <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
-            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
             <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
         </td>
     </tr>
     <tr>
         <td>라이브러리</td>
         <td>
-            <img src="https://img.shields.io/badge/BootStrap-7952B3?style=for-the-badge&logo=BootStrap&logoColor=white"/>
             <img src="https://img.shields.io/badge/KakaoMap-FFCD00?style=for-the-badge&logo=Kakao&logoColor=white"/>
         </td>
     </tr>
@@ -86,17 +75,64 @@
             <img src="https://img.shields.io/badge/Oracle 11g-F80000?style=for-the-badge&logo=Oracle&logoColor=white"/>
         </td>
     </tr>
-    <tr>
-        <td>협업도구</td>
-        <td>
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
-        </td>
-    </tr>
-</table>
+</table><br>
+</details>
+
+
+* 매장정보, 회원정보 DB 설계 및 구현 참여
+
+* KAKAO Map API를 활용해 DB에 입력된 제로웨이스트 매장 위치 마커 표시 기능 구현
+
+* Javascript를 이용한 음식 종류 별 카테고리 선택 기능 구현 
+   - 카테고리를 선택하면 DB값과 비교하여 해당하는 매장들의 위치를 표시하는 기능
+   - API가 제공하는 카테고리는 약국, 편의점 등의 시설로 정해져 있어서 사용 불가 -> 자체적으로 DB 값을 필터링하여 마커로 표시하도록 재구현
+   
+* 지도에서 곧바로 매장 위치를 확인할 수 있는 매장명 검색 기능 구현
+   - 전국 단위 검색이 가능하도록 짜여진 API코드를 구현 당시 원하는 지역에서만 검색할 수 있도록 변형
+   
+* Kakao MAP API 마커 클릭 시 매장정보를 즉시 확인할 수 있는 오버레이 구현
+   - 오버레이 내에는 매장 관련 간단한 정보와 상세보기 페이지 URL 첨부
+   
+<br><br>
+
+
+
+## ✅ 트러블슈팅
+  
+📌 문제1 : 지도 페이지로의 이동<br>
+   - Mybatis MVC 패턴을 기반으로 메인페이지에서 지도 페이지로의 이동단을 구현할 당시 발생했다.<br>
+      이동할 때 필요한 요소를 모두 채웠다고 생각했으나 메인페이지에서 지도 페이지로 이동하는 버튼 설정을 하지 않아서 <br>
+      사용자 요청 자체가 이루어지지 않아 생긴 간단한 문제였다.
+<br> 
+
+📌 문제2 : 카테고리 검색 기능 문제<br>
+    -  KAKAO Map API에 카테고리 검색 코드가 정리되어 있어서 이를 적용하려고 했는데, 구현하고자 하는 기능이 아니었다.<br>
+      병원, 편의점, 약국 등 실제 지도 사용자들이 편리하게 찾아볼 수 있는 것들만 정해져 있었고, 이에 따른 코드가 모두 지정되어 바꿀 수 없었다. <br>
+      즉, 가져다 쓸 수 없는 코드였다.<br>
+      
+    -  DB에 저장된 제로웨이스트 매장들을 한식, 중식, 양식 등으로 자체 필터링할 수 있는 코드를 구현해 해결했다. <br>
+    
+ 
+ 
+
+![image](https://user-images.githubusercontent.com/103619605/184651837-dcfa97ea-ede2-449d-b96d-4cea45a023b8.png)
+
 
 
 <br><br>
+    💡  API를 원하는 기능에 맞게 구현하는 작업이 쉬운 일이 아니라는 것을 느꼈다. <br>
+    💡  무엇보다도 API를 사용할 때에는 코드 이해와 흐름 파악이 가장 중요하다는 것을 알았다. <br>
+    코드를 알고 흐름을 파악해야 원하는 타이밍에 원하는 기능을 넣기가 수월했다.
+   
+   
+
+
+
+
+<br><br>
+
+<details>
+<summary><h2>✅프로젝트 상세</h2></summary>
 
 
 ## 📌 시스템 아키텍처 구조
@@ -122,76 +158,31 @@
 
 ## 📌 ER다이어그램
 ![image](https://user-images.githubusercontent.com/103619605/182579207-e5070ca5-2cde-43d1-94f7-5414a2d56a9f.png)
+
 <br>
 <br>
 <br>
+
+
 
 ## ✅ 화면 구성
 
 ### 회원가입 / 메인화면 / 사용자 튜토리얼 화면
 ![image](https://user-images.githubusercontent.com/103620466/182588812-326be119-90cb-4264-b3f1-bb7eb059888f.png)
-<br>
-<br>
+<br><br>
 
 ### 매장 보기 화면 (전체 매장 / 카테고리 선택 / 매장명 검색)
 ![image](https://user-images.githubusercontent.com/103620466/182589092-43fdf433-026b-47da-9d48-a5c5105ecdf3.png)
-<br>
-<br>
+<br><br>
 
 ### 커뮤니티 게시판 화면 / 리뷰 등록 / 리뷰 수정
 ![image](https://user-images.githubusercontent.com/103620466/182589351-00081d31-ca43-4193-9fb2-23fa1b506990.png)
-<br>
-<br>
+<br><br>
 
 ### 등급 시각화 / 리워드 화면 / 신규 매장등록 화면
 ![image](https://user-images.githubusercontent.com/103620466/182589764-d97e7c59-957b-47aa-a884-1e62ba9cd57d.png)
-<br>
-<br>
-<br>
-
-## ✅ 팀원 역할
-<table>
-  <tr>
-    <td align="center"><img src="https://item.kakaocdn.net/do/fd49574de6581aa2a91d82ff6adb6c0115b3f4e3c2033bfd702a321ec6eda72c" width="100" height="100"/></td>
-    <td align="center"><img src="https://mb.ntdtv.kr/assets/uploads/2019/01/Screen-Shot-2019-01-08-at-4.31.55-PM-e1546932545978.png" width="100" height="100"/></td>
-    <td align="center"><img src="https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2" width="100" height="100"/></td>
-    <td align="center"><img src="https://i.pinimg.com/236x/ed/bb/53/edbb53d4f6dd710431c1140551404af9.jpg" width="100" height="100"/></td>
-    <td align="center"><img src="https://pbs.twimg.com/media/B-n6uPYUUAAZSUx.png" width="100" height="100"/></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>김채윤</strong></td>
-    <td align="center"><strong>최현우</strong></td>
-    <td align="center"><strong>이상희</strong></td>
-    <td align="center"><strong>유슬이</strong></td>
-    <td align="center"><strong>김연이</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Backend</b></td>
-    <td align="center"><b>Backend</b></td>
-    <td align="center"><b>Backend</b></td>
-    <td align="center"><b>Frontend</b></td>
-    <td align="center"><b>Frontend</b></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/Chaeyuny" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/hyunUChoi" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/run-acorn" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/3susu3" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/자신의username작성해주세요" target='_blank'>github</a></td>
-  </tr>
-</table>
+<br><br>
+</details>
 
 
-<br>
-<br>
-<br>
 
-## ✅ 트러블슈팅
-개념: 문제 해결을 위해 문제의 원인을 논리적이고 체계적으로 찾는 일이며 제품이나 프로세스의 운영을 재개
-프로젝트 진행하는 동안 발생했던 이슈 중 가장 기억에 남았던 문제와 해결 프로세스 나열(2~5가지 정도)
-  
-* 문제1<br>
- 문제점 설명 및 해결방안
- 
-* 문제2<br>
- 문제점 설명 및 해결방안
